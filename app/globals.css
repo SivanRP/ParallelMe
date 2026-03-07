@@ -1,0 +1,277 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f4f8ff;
+  --foreground: #171922;
+  --path-a: #FF4757;
+  --path-b: #4DABF7;
+  --path-a-light: rgba(255, 71, 87, 0.12);
+  --path-b-light: rgba(77, 171, 247, 0.12);
+  --yellow: #FFD60A;
+  --green: #2ECC71;
+  --orange: #FF8C00;
+  --border: rgba(23, 25, 34, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Avenir Next', 'Trebuchet MS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Bright playful sky glow */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -2;
+  background:
+    radial-gradient(circle at 16% 14%, rgba(255, 214, 10, 0.33) 0%, rgba(255, 214, 10, 0) 30%),
+    radial-gradient(circle at 83% 8%, rgba(77, 171, 247, 0.28) 0%, rgba(77, 171, 247, 0) 31%),
+    radial-gradient(circle at 52% 76%, rgba(139, 92, 246, 0.24) 0%, rgba(139, 92, 246, 0) 38%),
+    linear-gradient(180deg, #f8fbff 0%, #f0f5ff 55%, #eef6ff 100%);
+}
+
+/* Subtle paper grain */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.02;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ── Animated shimmer gradient (works on light bg) ── */
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    #FF4757 0%,
+    #FF8C00 25%,
+    #1E90FF 50%,
+    #FF8C00 75%,
+    #FF4757 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 4s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+/* ── Neo-brutal card (light playful) ── */
+.brutal-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.94) 0%, rgba(248, 251, 255, 0.9) 100%);
+  border: 2px solid rgba(17, 17, 17, 0.1);
+  border-radius: 20px;
+  box-shadow:
+    0 8px 24px rgba(49, 66, 109, 0.12),
+    0 2px 0 rgba(17, 17, 17, 0.08) inset,
+    0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.brutal-card-a {
+  background: linear-gradient(180deg, rgba(255, 235, 238, 0.94) 0%, rgba(255, 245, 246, 0.9) 100%);
+  border: 2px solid rgba(255, 71, 87, 0.34);
+  border-radius: 20px;
+  box-shadow: 0 8px 18px rgba(255, 71, 87, 0.14), 0 2px 0 rgba(17, 17, 17, 0.06) inset;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.brutal-card-b {
+  background: linear-gradient(180deg, rgba(233, 245, 255, 0.94) 0%, rgba(245, 251, 255, 0.9) 100%);
+  border: 2px solid rgba(77, 171, 247, 0.34);
+  border-radius: 20px;
+  box-shadow: 0 8px 18px rgba(77, 171, 247, 0.15), 0 2px 0 rgba(17, 17, 17, 0.06) inset;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* ── Chunky button ── */
+.btn-chunky {
+  border: 2px solid #111;
+  border-radius: 14px;
+  box-shadow: 4px 4px 0 #111, 0 8px 18px rgba(43, 56, 93, 0.12);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.btn-chunky:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 #111, 0 8px 14px rgba(43, 56, 93, 0.1);
+}
+
+.btn-chunky:active {
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0 #111;
+}
+
+/* ── Chunky input ── */
+.input-chunky {
+  border: 2px solid rgba(17, 17, 17, 0.14);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 8px 20px rgba(45, 60, 102, 0.1), 0 1px 0 rgba(255, 255, 255, 0.7) inset;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.input-chunky:focus-within {
+  box-shadow: 0 0 0 4px rgba(77, 171, 247, 0.25), 0 10px 24px rgba(45, 60, 102, 0.14);
+  border-color: rgba(77, 171, 247, 0.7);
+  outline: none;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(17, 17, 17, 0.04);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(77, 171, 247, 0.45);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(77, 171, 247, 0.7);
+}
+
+/* ── Floating blob animation ── */
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33% { transform: translateY(-18px) rotate(2deg); }
+  66% { transform: translateY(8px) rotate(-1deg); }
+}
+
+@keyframes float-medium {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-12px) scale(1.03); }
+}
+
+.float-slow { animation: float-slow 8s ease-in-out infinite; }
+.float-medium { animation: float-medium 6s ease-in-out infinite; }
+
+/* ── Confetti pop ── */
+@keyframes pop-in {
+  0% { transform: scale(0) rotate(-10deg); opacity: 0; }
+  70% { transform: scale(1.1) rotate(3deg); }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+.pop-in { animation: pop-in 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
+
+/* ── Tag/sticker style ── */
+.sticker-a {
+  background: rgba(255, 71, 87, 0.11);
+  border: 2px solid rgba(255, 71, 87, 0.65);
+  color: #df3342;
+  border-radius: 99px;
+  font-weight: 800;
+  box-shadow: 0 4px 0 rgba(223, 51, 66, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.sticker-b {
+  background: rgba(77, 171, 247, 0.11);
+  border: 2px solid rgba(77, 171, 247, 0.65);
+  color: #1d81dd;
+  border-radius: 99px;
+  font-weight: 800;
+  box-shadow: 0 4px 0 rgba(29, 129, 221, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.sticker-yellow {
+  background: rgba(255, 214, 10, 0.22);
+  border: 2px solid rgba(197, 144, 0, 0.68);
+  color: #835900;
+  border-radius: 99px;
+  font-weight: 800;
+  box-shadow: 0 4px 0 rgba(197, 144, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+/* ── Section divider ── */
+.section-divider {
+  height: 1px;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(17,17,17,0.18) 0px,
+    rgba(17,17,17,0.18) 8px,
+    transparent 8px,
+    transparent 16px
+  );
+  border-radius: 2px;
+}
+
+/* ── Handcrafted comic pieces ── */
+.comic-card {
+  position: relative;
+  border: 3px solid #111;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 8px 8px 0 #111;
+}
+
+.comic-card::after {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 1px dashed rgba(17, 17, 17, 0.15);
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.comic-note {
+  border: 2px solid #111;
+  border-radius: 12px;
+  background: #fffbea;
+  box-shadow: 4px 4px 0 #111;
+}
+
+.comic-chip {
+  border: 2px solid #111;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 3px 3px 0 rgba(17, 17, 17, 0.25);
+}
+
+.tape-tag {
+  position: relative;
+}
+
+.tape-tag::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 14px;
+  width: 32px;
+  height: 10px;
+  border: 1px solid rgba(17, 17, 17, 0.2);
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 3px;
+  transform: rotate(-7deg);
+}
