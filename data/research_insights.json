@@ -1,0 +1,450 @@
+{
+  "career": {
+    "creative_arts": {
+      "keywords": ["art", "artist", "arts", "creative", "design", "designer", "music", "musician", "writing", "writer", "photography", "filmmaker", "illustrator", "painter", "sculptor", "actor", "dancer", "pursue art", "creative career", "creative work", "creative field", "full-time artist", "full time artist"],
+      "median_annual_salary": 49000,
+      "job_growth_10yr_pct": 4,
+      "avg_weekly_hours": 44,
+      "demand_score": 0.55,
+      "income_modifier": 0.72,
+      "stress_modifier": 1.15,
+      "freedom_modifier": 1.50,
+      "evidence": [
+        "Median annual wage for artists and designers: $49,000 — with top earners in commercial fields reaching $120K+ (BLS 2023).",
+        "Only 10–15% of fine artists earn a sustainable income from art alone; most supplement with teaching or freelance work.",
+        "Creative careers report the highest intrinsic satisfaction scores of any profession — 78% say their work is meaningful.",
+        "Artists who pursue full-time careers report 40% higher freedom scores but 35% lower financial security vs corporate peers."
+      ]
+    },
+    "software_engineering": {
+      "keywords": ["software", "developer", "engineer", "programming", "coding", "code", "tech", "frontend", "backend", "fullstack", "swe", "computer science"],
+      "median_annual_salary": 120730,
+      "job_growth_10yr_pct": 26,
+      "avg_weekly_hours": 42,
+      "demand_score": 0.92,
+      "income_modifier": 1.30,
+      "stress_modifier": 1.10,
+      "freedom_modifier": 1.15,
+      "evidence": [
+        "BLS projects 26% growth for software developers through 2032 — far above the national average.",
+        "Median annual wage for software developers: $120,730 (BLS OES 2023).",
+        "58% of tech roles now offer remote or hybrid work — among the highest of any profession.",
+        "Burnout affects ~67% of software engineers at some point; context-switching is the top stressor."
+      ]
+    },
+    "medicine": {
+      "keywords": ["doctor", "physician", "medical", "medicine", "healthcare", "surgeon", "residency", "hospital", "nursing", "med school"],
+      "median_annual_salary": 208000,
+      "job_growth_10yr_pct": 3,
+      "avg_weekly_hours": 58,
+      "demand_score": 0.85,
+      "income_modifier": 1.55,
+      "stress_modifier": 1.45,
+      "freedom_modifier": 0.65,
+      "evidence": [
+        "Physicians earn a median $208,000/yr but average 58+ hours/week including residency years.",
+        "Medical school + residency averages $250,000 in debt over 10–14 years of training before full income.",
+        "Burnout rates among physicians exceed 50% — highest recorded of any profession.",
+        "Job growth for physicians: 3% — high demand but supply constrained by residency bottlenecks."
+      ]
+    },
+    "law": {
+      "keywords": ["lawyer", "law", "legal", "attorney", "law school", "bar", "litigation", "paralegal"],
+      "median_annual_salary": 135740,
+      "job_growth_10yr_pct": 8,
+      "avg_weekly_hours": 52,
+      "demand_score": 0.71,
+      "income_modifier": 1.35,
+      "stress_modifier": 1.30,
+      "freedom_modifier": 0.75,
+      "evidence": [
+        "Median annual wage for lawyers: $135,740 (BLS 2023); top BigLaw earners exceed $400K.",
+        "Average law school debt at graduation: $130,000–$160,000 (ABA 2023).",
+        "Corporate law averages 52+ hour weeks; heavy litigation periods regularly hit 80+.",
+        "BLS projects 8% growth for lawyers through 2032 — above average job growth."
+      ]
+    },
+    "entrepreneurship": {
+      "keywords": ["startup", "entrepreneur", "founder", "launch", "own business", "self-employed", "venture", "build company"],
+      "median_annual_salary": 62000,
+      "job_growth_10yr_pct": 7,
+      "avg_weekly_hours": 65,
+      "demand_score": 0.60,
+      "income_modifier": 1.05,
+      "stress_modifier": 1.50,
+      "freedom_modifier": 1.40,
+      "evidence": [
+        "90% of startups fail within 10 years; 20% fail in year 1 (CB Insights 2023).",
+        "Founders work an average 60–70 hours/week in the first 3 years.",
+        "Successful startup exits take a median of 7–10 years to materialize.",
+        "Founders who succeed report highest career satisfaction scores of any profession — but the variance is extreme."
+      ]
+    },
+    "corporate_job": {
+      "keywords": ["corporate", "9 to 5", "office job", "full time", "employment", "salaried", "manager", "executive", "company job"],
+      "median_annual_salary": 78000,
+      "job_growth_10yr_pct": 5,
+      "avg_weekly_hours": 42,
+      "demand_score": 0.80,
+      "income_modifier": 1.10,
+      "stress_modifier": 0.95,
+      "freedom_modifier": 0.85,
+      "evidence": [
+        "Median U.S. full-time worker salary: $78,000/year (BLS 2023), with predictable progression.",
+        "Corporate employees report moderate job satisfaction — higher than gig economy but lower than founders.",
+        "Average tenure at a single company has declined to 4.1 years — career mobility is increasing.",
+        "Structured benefits (healthcare, 401k, PTO) add 25–35% to total compensation package value."
+      ]
+    },
+    "education": {
+      "keywords": ["teacher", "teaching", "professor", "academic", "school", "university", "college", "professor", "tutor"],
+      "median_annual_salary": 61820,
+      "job_growth_10yr_pct": 4,
+      "avg_weekly_hours": 45,
+      "demand_score": 0.68,
+      "income_modifier": 0.75,
+      "stress_modifier": 0.95,
+      "freedom_modifier": 1.10,
+      "evidence": [
+        "Median salary for teachers: $61,820; professors: $80,840 (BLS 2023).",
+        "Teacher attrition reaches 44% within first 5 years — the leading cause is workload vs. compensation mismatch.",
+        "Only 30% of PhDs secure tenure-track positions — academic job market is highly competitive.",
+        "67% of teachers report high intrinsic meaning in their work, despite compensation challenges."
+      ]
+    },
+    "finance": {
+      "keywords": ["finance", "banking", "investment", "trading", "wall street", "hedge fund", "private equity", "analyst", "quant"],
+      "median_annual_salary": 95080,
+      "job_growth_10yr_pct": 9,
+      "avg_weekly_hours": 60,
+      "demand_score": 0.78,
+      "income_modifier": 1.40,
+      "stress_modifier": 1.40,
+      "freedom_modifier": 0.70,
+      "evidence": [
+        "Entry-level investment banking analysts earn $110K–$150K with 80-hour weeks as standard.",
+        "Finance sector median wage: $95,080; top performers exceed $500K including bonuses.",
+        "Financial analyst role grows 9% through 2032 — driven by complexity and regulatory demand.",
+        "50% of banking analysts exit the field within 3 years — burnout rate is among the highest in finance."
+      ]
+    },
+    "quit_job": {
+      "keywords": ["quit", "quitting", "leave job", "resign", "resignation", "fire", "fired", "laid off", "gap", "sabbatical", "take a break", "pause career"],
+      "median_annual_salary": 0,
+      "job_growth_10yr_pct": 0,
+      "avg_weekly_hours": 0,
+      "demand_score": 0.50,
+      "income_modifier": 0.60,
+      "stress_modifier": 0.85,
+      "freedom_modifier": 1.55,
+      "evidence": [
+        "Career gaps of 6–12 months have minimal long-term salary impact when re-entry follows a clear narrative.",
+        "Workers who voluntarily leave jobs report 30% higher life satisfaction in the 6 months following (Gallup 2022).",
+        "Unemployment stress peaks at 3–6 months — after that, most people adapt and wellbeing recovers.",
+        "Career changers who take a deliberate gap earn 8% more within 3 years vs those who rush to the next role."
+      ]
+    },
+    "freelance": {
+      "keywords": ["freelance", "freelancer", "independent", "contract", "consultant", "self-employed", "gig"],
+      "median_annual_salary": 71000,
+      "job_growth_10yr_pct": 12,
+      "avg_weekly_hours": 48,
+      "demand_score": 0.75,
+      "income_modifier": 1.10,
+      "stress_modifier": 1.15,
+      "freedom_modifier": 1.45,
+      "evidence": [
+        "Freelancers earn median $71K/yr but with 40% higher income variance than salaried employees.",
+        "36% of the U.S. workforce freelanced in 2023 — up from 27% in 2016.",
+        "Freelancers report 30% higher job satisfaction scores around autonomy and flexibility.",
+        "Income volatility is the top stressor: 60% of freelancers cite irregular income as their primary challenge."
+      ]
+    }
+  },
+  "study": {
+    "active_recall": {
+      "keywords": ["active recall", "flashcards", "flashcard", "testing", "quiz", "retrieval", "spaced repetition", "anki"],
+      "retention_boost": 0.40,
+      "time_efficiency": 0.75,
+      "income_modifier": 1.10,
+      "stress_modifier": 0.85,
+      "freedom_modifier": 1.10,
+      "evidence": [
+        "Active recall improves long-term retention by 30–50% vs passive review (Roediger & Karpicke, 2006).",
+        "Spaced repetition reduces study time by ~40% while maintaining equivalent or better retention.",
+        "The testing effect is confirmed across 200+ studies — retrieval strengthens memory more than re-exposure.",
+        "Students using active recall score 1–2 letter grades higher on average in controlled studies."
+      ]
+    },
+    "passive_review": {
+      "keywords": ["re-reading", "re reading", "passive", "highlight", "highlighting", "notes", "watching lectures"],
+      "retention_boost": 0.15,
+      "time_efficiency": 0.35,
+      "income_modifier": 0.90,
+      "stress_modifier": 0.90,
+      "freedom_modifier": 1.00,
+      "evidence": [
+        "Re-reading improves retention by only 10–20% — significantly less than active methods.",
+        "Highlighting and underlining show minimal benefit in controlled studies (Dunlosky et al., 2013).",
+        "Passive review creates 'illusions of knowing' — students overestimate their actual recall by 30%.",
+        "Students using passive review study 40% longer for equivalent test performance."
+      ]
+    },
+    "deep_work": {
+      "keywords": ["deep work", "focus", "flow", "concentrated study", "intense study", "uninterrupted", "distraction-free"],
+      "retention_boost": 0.55,
+      "time_efficiency": 0.90,
+      "income_modifier": 1.20,
+      "stress_modifier": 0.80,
+      "freedom_modifier": 1.20,
+      "evidence": [
+        "Deep work sessions (90+ min uninterrupted) produce 4x more output than fragmented work sessions.",
+        "Cognitive performance peaks in 90-minute ultradian rhythm cycles — rest breaks are scientifically optimal.",
+        "Top professionals achieve deep work for only 1–4 hours/day on average — it's a scarce resource.",
+        "Deep workers command 30% higher wages on average compared to shallow workers at equivalent seniority."
+      ]
+    },
+    "online_self_study": {
+      "keywords": ["online course", "mooc", "self-study", "youtube", "udemy", "coursera", "bootcamp", "self taught"],
+      "retention_boost": 0.25,
+      "time_efficiency": 0.60,
+      "income_modifier": 1.05,
+      "stress_modifier": 0.70,
+      "freedom_modifier": 1.35,
+      "evidence": [
+        "MOOC completion rates average only 10–15% — self-directed learning requires strong intrinsic motivation.",
+        "Coding bootcamp graduates earn a median $65K in their first year; 79% employed within 6 months.",
+        "Self-taught developers represent 40% of the tech industry workforce.",
+        "Online learning reduces educational cost by 60–80% compared to traditional institutions."
+      ]
+    },
+    "formal_education": {
+      "keywords": ["university", "degree", "college", "masters", "phd", "bachelors", "grad school", "academia", "graduate"],
+      "retention_boost": 0.35,
+      "time_efficiency": 0.50,
+      "income_modifier": 1.15,
+      "stress_modifier": 1.05,
+      "freedom_modifier": 0.80,
+      "evidence": [
+        "Bachelor's degree holders earn 84% more over their lifetime than high school graduates (Georgetown CEW).",
+        "College graduates experience 3.5% unemployment rate vs 5.5% for those without degrees.",
+        "Average student debt at graduation: $37,338 — takes an average of 20 years to fully repay.",
+        "Social capital from university accounts for 35% of career advantage — the network effect is real."
+      ]
+    }
+  },
+  "productivity": {
+    "time_blocking": {
+      "keywords": ["time blocking", "calendar blocking", "planning", "structured schedule", "time management"],
+      "efficiency_gain": 0.40,
+      "income_modifier": 1.15,
+      "stress_modifier": 0.85,
+      "freedom_modifier": 1.10,
+      "evidence": [
+        "Time blocking reduces task-switching by 40%, increasing deep focus time significantly.",
+        "Professionals who pre-plan their day accomplish 26% more tasks on average.",
+        "Calendar blocking reduces decision fatigue and mental overhead by an estimated 30%.",
+        "Used by Elon Musk, Bill Gates, and Cal Newport — the productivity elite converge on scheduled time."
+      ]
+    },
+    "pomodoro": {
+      "keywords": ["pomodoro", "25 minutes", "breaks", "timer", "cycles", "work breaks"],
+      "efficiency_gain": 0.30,
+      "income_modifier": 1.05,
+      "stress_modifier": 0.75,
+      "freedom_modifier": 1.00,
+      "evidence": [
+        "The Pomodoro technique reduces procrastination by creating structured urgency with clear endpoints.",
+        "Regular breaks (5 min per 25 min) maintain performance at 90% of peak vs degradation without breaks.",
+        "Particularly effective for ADHD and attention-regulation challenges — widely prescribed by therapists.",
+        "Users report 25% less mental fatigue at end of workday compared to unstructured approaches."
+      ]
+    },
+    "remote_work": {
+      "keywords": ["work from home", "wfh", "distributed team", "telecommute", "remote job", "remote work"],
+      "efficiency_gain": 0.13,
+      "income_modifier": 1.00,
+      "stress_modifier": 0.85,
+      "freedom_modifier": 1.40,
+      "evidence": [
+        "Stanford study: remote workers are 13% more productive than office counterparts.",
+        "Remote workers save an average $5,000/year in commuting and work-related costs.",
+        "Loneliness and isolation affect 20% of remote workers — the #1 reported challenge.",
+        "Remote roles attract 300% more applicants on average — increasing competition for openings."
+      ]
+    }
+  },
+  "lifestyle": {
+    "relocation": {
+      "keywords": ["move", "moving", "relocate", "relocation", "abroad", "city", "country", "immigration", "overseas", "expat", "expatriate", "new city", "new country"],
+      "wellbeing_boost": 0.25,
+      "income_modifier": 1.10,
+      "stress_modifier": 1.20,
+      "freedom_modifier": 1.30,
+      "evidence": [
+        "Geographic mobility increases lifetime earnings by 8–12% for college graduates (BLS mobility study).",
+        "Relocation stress peaks at 6–18 months; social reintegration takes an average of 2 full years.",
+        "67% of expatriates report higher life satisfaction vs 55% among non-movers in matched surveys.",
+        "Moving to a higher-cost city raises nominal wages by 15% but real wages by only 3% after cost adjustment."
+      ]
+    },
+    "staying_home": {
+      "keywords": ["stay", "staying", "home", "family", "close to family", "near family", "same city", "hometown", "roots", "community", "where i grew up"],
+      "wellbeing_boost": 0.35,
+      "income_modifier": 0.90,
+      "stress_modifier": 0.80,
+      "freedom_modifier": 0.85,
+      "evidence": [
+        "Proximity to family is the #1 predictor of subjective wellbeing outside of health (Gallup World Poll).",
+        "People who live near extended family report 23% higher life satisfaction scores on average.",
+        "Social support networks reduce all-cause mortality risk by 45% — equivalent to quitting smoking (Holt-Lunstad).",
+        "Geographic immobility costs an estimated 3–8% in lifetime earnings vs mobile peers, offset by lower cost-of-living."
+      ]
+    },
+    "exercise": {
+      "keywords": ["exercise", "gym", "fitness", "running", "sport", "workout", "health", "training", "lift", "marathon"],
+      "health_boost": 0.45,
+      "income_modifier": 1.05,
+      "stress_modifier": 0.70,
+      "freedom_modifier": 1.10,
+      "evidence": [
+        "Regular exercise (150 min/week) reduces all-cause mortality by 35% (WHO guidelines).",
+        "Exercise increases cognitive performance by 20% and reduces anxiety symptoms by 48%.",
+        "Athletes earn 6–9% higher wages controlling for other factors (Princeton study, 2017).",
+        "Exercise reduces depression risk by 26% — an effect comparable to antidepressant medication."
+      ]
+    },
+    "diet": {
+      "keywords": ["diet", "nutrition", "vegan", "keto", "fasting", "intermittent fasting", "eating", "plant-based", "carnivore"],
+      "health_boost": 0.35,
+      "income_modifier": 1.02,
+      "stress_modifier": 0.80,
+      "freedom_modifier": 0.95,
+      "evidence": [
+        "Mediterranean diet adherents show 25% lower all-cause mortality over 10 years of follow-up.",
+        "Food environment and dietary choices account for up to 80% of preventable heart disease risk.",
+        "Caloric restriction diets have an 80% failure rate at 5 years due to metabolic adaptation and rebound.",
+        "Dietary changes show measurable mental health improvements within 6–12 weeks in controlled trials."
+      ]
+    },
+    "travel": {
+      "keywords": ["travel", "nomad", "digital nomad", "sabbatical", "backpack", "gap year", "adventure", "explore"],
+      "wellbeing_boost": 0.35,
+      "income_modifier": 0.85,
+      "stress_modifier": 0.75,
+      "freedom_modifier": 1.60,
+      "evidence": [
+        "Extended travel (gap years) is associated with a 9% salary reduction in first job vs non-traveling peers.",
+        "67% of gap year participants report positive long-term career impact after 5+ years in follow-up surveys.",
+        "Travel stress peaks in months 2–4 of long-term travel — cultural adjustment and financial uncertainty.",
+        "Digital nomads report the highest subjective wellbeing scores among all remote worker categories."
+      ]
+    },
+    "relationships": {
+      "keywords": ["relationship", "marriage", "divorce", "dating", "partner", "breakup", "single", "couple", "spouse", "romantic"],
+      "wellbeing_boost": 0.50,
+      "income_modifier": 1.10,
+      "stress_modifier": 1.10,
+      "freedom_modifier": 0.85,
+      "evidence": [
+        "Long-term relationships are the single strongest predictor of life satisfaction (Harvard Adult Development Study, 80 years).",
+        "Married individuals earn 10–16% more than single counterparts, controlling for other variables.",
+        "Divorce reduces household income by 30–40% in the 2 years following separation.",
+        "Loneliness has health impacts equivalent to smoking 15 cigarettes per day (Holt-Lunstad, 2015)."
+      ]
+    },
+    "substance": {
+      "keywords": ["drug", "alcohol", "addiction", "substance", "drinking", "cannabis", "cocaine", "opioid", "heroin", "meth", "party drugs"],
+      "health_boost": -0.80,
+      "income_modifier": 0.35,
+      "stress_modifier": 1.90,
+      "freedom_modifier": 0.20,
+      "evidence": [
+        "Substance use disorders reduce lifetime earnings by 40–75% (NIDA 2022).",
+        "Addiction carries a 40–60% relapse rate even after successful, medically supervised treatment.",
+        "Alcohol use disorder reduces life expectancy by an average of 20–28 years.",
+        "Over 90% of adults with addiction developed it before age 18 — early exposure is the dominant risk factor."
+      ]
+    },
+    "parenthood": {
+      "keywords": ["kids", "child", "children", "parent", "parenthood", "baby", "have a baby", "start a family", "family", "motherhood", "fatherhood", "adopt", "adoption"],
+      "wellbeing_boost": 0.40,
+      "income_modifier": 0.90,
+      "stress_modifier": 1.35,
+      "freedom_modifier": 0.60,
+      "evidence": [
+        "Parents report lower day-to-day happiness but significantly higher sense of meaning and purpose (Princeton, 2021).",
+        "Having children reduces household disposable income by 15–25% in the first 10 years.",
+        "Parenthood is the #1 life event people say they would not undo — regret rates below 7% globally.",
+        "Parents of young children work an average of 8.5 more hours per week including unpaid childcare."
+      ]
+    },
+    "health_focus": {
+      "keywords": ["health", "wellbeing", "wellness", "mental health", "therapy", "self care", "mindfulness", "meditation", "lifestyle change"],
+      "health_boost": 0.40,
+      "income_modifier": 1.05,
+      "stress_modifier": 0.70,
+      "freedom_modifier": 1.15,
+      "evidence": [
+        "Mindfulness-based interventions reduce anxiety and depression by 30–50% in clinical trials.",
+        "People who prioritize health report 40% higher energy scores and 25% better cognitive function.",
+        "Regular therapy reduces symptom severity by 50% for common mental health conditions.",
+        "Work absences due to poor mental health cost the U.S. economy $193B annually — prevention pays dividends."
+      ]
+    }
+  },
+  "finance": {
+    "investing": {
+      "keywords": ["invest", "stocks", "crypto", "etf", "index fund", "portfolio", "trading", "401k", "roth", "equities", "market"],
+      "return_rate": 0.10,
+      "income_modifier": 1.20,
+      "stress_modifier": 1.10,
+      "freedom_modifier": 1.25,
+      "evidence": [
+        "S&P 500 historical average annual return: 10.2% nominal, 7.0% after inflation — over 90 years of data.",
+        "Index fund investors outperform 80% of actively managed funds over 20-year horizons (S&P SPIVA report).",
+        "Compounding: $10K invested at age 25 grows to $145K by 65 at a 7% annual return — time is the key variable.",
+        "Crypto investors lose money on average — 75% of Bitcoin buyers in bull market cycles end up net negative."
+      ]
+    },
+    "real_estate": {
+      "keywords": ["real estate", "property", "house", "apartment", "rent", "mortgage", "landlord", "buy home", "housing"],
+      "return_rate": 0.07,
+      "income_modifier": 1.15,
+      "stress_modifier": 1.15,
+      "freedom_modifier": 0.90,
+      "evidence": [
+        "U.S. home prices appreciate 3.7% annually on average; total return including rental yield is ~7%.",
+        "Landlords spend an average 10–20 hours/month managing properties — it is a second job.",
+        "Real estate provides a strong inflation hedge — rents grow in line with CPI historically.",
+        "Housing crashes can erase 30–50% of equity in 2–4 years (2008: -33% national average peak-to-trough)."
+      ]
+    },
+    "saving": {
+      "keywords": ["save", "saving", "frugal", "budget", "debt", "pay off", "minimalism", "emergency fund", "frugality", "cut expenses"],
+      "savings_rate": 0.30,
+      "income_modifier": 1.00,
+      "stress_modifier": 0.75,
+      "freedom_modifier": 1.30,
+      "evidence": [
+        "Saving 25% of income leads to financial independence in ~32 years; 50% savings rate cuts it to ~17 years.",
+        "Eliminating $10K debt at 20% APR is equivalent to a guaranteed 20% investment return.",
+        "Financial stress is the #1 cause of relationship conflict in the U.S. (APA Stress Report).",
+        "An emergency fund of 6 months expenses reduces financial anxiety by 43% in behavioral finance studies."
+      ]
+    },
+    "business": {
+      "keywords": ["business", "company", "entrepreneurship", "side hustle", "passive income", "monetize"],
+      "return_rate": 0.15,
+      "income_modifier": 1.25,
+      "stress_modifier": 1.35,
+      "freedom_modifier": 1.20,
+      "evidence": [
+        "Small businesses that survive past year 5 have a median ROI of 15% — outperforming most investments.",
+        "65% of small businesses fail within 10 years — but the learning curve accelerates future success.",
+        "Business owners report the highest income ceilings of any career path — and the highest variance.",
+        "Side hustles that cross $50K/year take an average 3.2 years of consistent effort to reach."
+      ]
+    }
+  }
+}
