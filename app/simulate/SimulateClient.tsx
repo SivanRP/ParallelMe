@@ -494,6 +494,12 @@ export function SimulateClient({ decision }: SimulateClientProps) {
                 <span className={`h-1.5 w-1.5 rounded-full ${data.source === 'mock' ? 'bg-[#FFD60A]' : 'bg-[#2ECC71]'}`} />
                 {data.source === 'mock' ? 'Using demo data' : `AI powered · ${data.source}`}
               </div>
+              {/* Show actual error when falling back to mock — helps diagnose key/quota issues */}
+              {data._error && (
+                <div className="max-w-md rounded-xl border border-[#FF4757] bg-[#FFF5F5] px-3 py-1.5 text-[9px] font-mono text-[#FF4757] text-center break-all">
+                  {data._error}
+                </div>
+              )}
             </div>
           )}
         </motion.div>
