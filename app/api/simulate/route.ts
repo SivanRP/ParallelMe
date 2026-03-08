@@ -3,6 +3,7 @@ import { getDataModifiers, formatModifiersForPrompt } from '@/lib/dataDecisionEn
 import { parseDecision, buildPrompt, generateMockFutures } from '@/lib/simulateHelpers'
 import { withTimeout } from '@/lib/withTimeout'
 import { buildSourceTrustLayer, type SourceTrustInsights } from '@/lib/sourceTrustLayer'
+import { geminiGenerate, parseGeminiJson } from '@/lib/gemini'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -161,6 +162,27 @@ async function callGroq(
   return { ...parsed, source: 'groq' } as SimulateResponse
 }
 
+// ─── Gemini ───────────────────────────────────────────────────────────────────
+
+async function callGemini(
+  decision: string,
+  optionA: string,
+  optionB: string,
+  profile?: UserProfile,
+  context?: DecisionContext,
+  dataModifiersBlock?: string
+): Promise<SimulateResponse> {
+  const prompt = buildPrompt(decision, optionA, optionB, profile, context, dataModifiersBlock)
+  const result = await geminiGenerate({
+    prompt,
+    systemInstruction: 'You are a life simulation engine. Always respond with valid JSON only. No markdown, no explanation.',
+    jsonMode: true,
+    maxOutputTokens: 4000,
+  })
+  const parsed = parseGeminiJson<SimulateResponse>(result.content)
+  return { ...parsed, source: 'groq' } // labelled groq to match existing source type
+}
+
 // ─── Anthropic ────────────────────────────────────────────────────────────────
 
 async function callAnthropic(
@@ -284,8 +306,15 @@ export async function POST(req: NextRequest) {
       } catch (err) {
         const msg = err instanceof Error ? err.message : String(err)
         console.error('[simulate] Groq failed:', msg)
-        const mock = generateMockFutures(optionA, optionB)
-        return NextResponse.json({ ...withDecision(mock), _error: `Groq: ${msg}` })
+      }
+    }
+
+    if (process.env.GEMINI_API_KEY) {
+      try {
+        const result = await callGemini(decision, optionA, optionB, profile, context, dataModifiersBlock)
+        return NextResponse.json(withDecision(result))
+      } catch (err) {
+        console.error('[simulate] Gemini failed, falling back:', err)
       }
     }
 
